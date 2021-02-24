@@ -5,8 +5,9 @@ const app = express();
 dotenv.config();
 
 const port = process.env.PORT;
+app.use(express.urlencoded({ extended:true}))
+app.use(express.json())
 app.use(helmet())
-app.use(helmet.noCache())
 app.use(helmet.frameguard())
 // app.use(helmet({
 //   frameguard:false

@@ -6,3 +6,5 @@ mongoose
   })
   .then(() => console.log("Database connection established!!"))
   .catch(() => console.log("Error connection failed !!"));
+
+  require('../models/userModel')
